@@ -1,0 +1,30 @@
+(1)- para la compilacio en sass con gulp primero se crea una carpeta en la carpeta raiz con el nombre de src  y dentro de ella otra carpeta que tendra el nombre de scss  en donde estaran los archivos originales dentro de la carpeta scss se creara un archivo app.scss
+
+(2)- para declarar variables es sass se declara con  
+
+$color: red; 
+
+(3)- para poder compilar sass se necesitan dos dependencias la primera es la dependencia de sass que es la que entiende el lenguaje y gramatica de sass y la otra es la que  permite conectar con gulpfile 
+
+(1)  npm i --save-dev sass (2) gulp-sass 
+
+ambas esla misma linea separados por un solo espacio 
+
+(4)-  se creo la carpeta build y dentro de ella otra carpeta css en el cual tendra adebtro el archivo app.css   cuyo archivo al abrirlo estaran los estilos que se colocaron en el archivo .scss lo que hace es inyectar las variables en ese selector ya que en el archivo css no aparece las variables que se declararon en el .scss
+
+cada vez que se haga un cambio en la hoja de estilos de sass esta se debe compilar y se actualizara automaticamente en el css que es el que esta linkeado al index
+
+(5)-  dividir codigo de SASS en diferentes archivos 
+
+para ello se creo una carpeta dentro del archivo scss que esta dentro de la carpeta src  en el cual se llamara header y alli ira todo el codigo relacionado con el header del proyecto que se va a constriur
+
+y dentro e esta carpeta se va a crear un archivo llamado  _header.scss    todos los archivos scss comienzan con _   ese _ en sass significa que ese archivo se va aincluir en otro es decir su unico fin es incluirse a otro archivo y de ese archivo al que se inluya lo leera y lo compilara alla directamente OJO el que no tiene el _ como app.scss  si se va a compilar en un solo archivo 
+
+para agregar o incluir ese archivo _header.scss  al archivo principal que es app.scss   en ese archivo principal se agrega @use 'direccion de el archivo '  luego en la consola se coloca gulp  y todo lo que se agrego en _header.scss y se importo en el app.scss  saldra en el archivo de .css 
+
+se creo otro archivo de navegacion en la carpeta de header  y esta para agregar los cambios se agrego al archivo principal con el use aparte con el watch declarado para todos los scss se compilara y agarrara los cmbios automaticamente 
+
+(6)-  CREANDO VARIABLES EN SASS 
+
+para ello se creo otra carpeta en la carpeta scss llamada base en el cual se crearon varios archivos como _globales.scss -normalize.scss y _variables.scss  que es con el que vamos a trabajar 
+
