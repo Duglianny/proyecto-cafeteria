@@ -1,0 +1,17 @@
+como se le coloco git al proyecto 5
+
+(1)  git init   se creo el repositorio 
+
+(2)  se creo el archvio .gitignore en la raiz del proyecto 
+
+(3)  git add .    para gregar todo los archivos al repositorio 
+
+(4)  git commit -m "main"    se hace el primer commit que es main con todo ya agregado 
+
+(5) git branch -m main     se le cambio el nombnre a main 
+
+(6)  git branch develop    se creo la rama develop de main donde ira todo el desarrollo del proyecto 
+
+(7)   git branch explanation   se creo la rama explicacion de main para todas los apuntes hechos por mi 
+
+(8)  1- git rm expliaciones-sass.txt   2- git status   3- git commit -m     en la rama develop se borran todas las explicaciones para que solo quede el proyecto con estos 3 pasos se borra e esta rama mas no de main 
