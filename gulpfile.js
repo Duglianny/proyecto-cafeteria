@@ -16,17 +16,27 @@ function css(done){
       done()
 }
 
+function imagenes(done) {
+  src('./src/img/**/*')
+    .pipe(dest('./build/img'));
+
+    done();
+}
+
 function dev(){
 
-  watch('src/scss/**/*.scss', css)
+  watch('src/scss/**/*.scss', css);
   // watch('./src/scss/app.scss', css)
+
+  watch('./src/img/**/*, imagenes ');
 }
+
 
 exports.css = css;
 
 exports.dev = dev;
 
-exports.default = series (css, dev );
+exports.default = series (imagenes, css, dev );
 
 //series -
 
