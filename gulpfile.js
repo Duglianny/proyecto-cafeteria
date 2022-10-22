@@ -10,10 +10,10 @@ function css(done){
 
   src('./src/scss/app.scss')
     .pipe(sass({outputStyle: 'expanded'}))
-      .pipe(postcss([autoprefixer()]))
-        .pipe(dest('build/css'))
+    .pipe(postcss([autoprefixer()]))
+    .pipe(dest('build/css'))
 
-      done()
+  done()
 }
 
 function imagenes(done) {
@@ -35,6 +35,8 @@ function dev(){
 exports.css = css;
 
 exports.dev = dev;
+
+exports.imagenes = imagenes
 
 exports.default = series (imagenes, css, dev );
 
