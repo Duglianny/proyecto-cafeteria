@@ -4,6 +4,8 @@ const sass = require('gulp-sass')(require('sass'));
 const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer')
 
+const imagemin = require('gulp-imagemin')
+
 function css(done){
   //compilar sass
   //pasos: 1- identificar archivo, 2- compilarla, 3- guardar el .css
