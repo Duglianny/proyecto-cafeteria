@@ -10,10 +10,10 @@ function css(done){
 
   src('./src/scss/app.scss')
     .pipe(sass({outputStyle: 'expanded'}))
-      .pipe(postcss([autoprefixer()]))
-        .pipe(dest('build/css'))
+    .pipe(postcss([autoprefixer()]))
+    .pipe(dest('build/css'))
 
-      done()
+  done()
 }
 
 function dev(){
