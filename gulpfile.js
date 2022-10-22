@@ -11,7 +11,7 @@ function css(done){
   //pasos: 1- identificar archivo, 2- compilarla, 3- guardar el .css
 
   src('./src/scss/app.scss')
-    .pipe(sass({outputStyle: 'expanded'}))
+    .pipe(sass())
     .pipe(postcss([autoprefixer()]))
     .pipe(dest('build/css'))
 
@@ -20,7 +20,7 @@ function css(done){
 
 function imagenes() {
   return('./src/img/**/*')
-    .pipe(imagemin({optimizationLeve:3}))
+    .pipe(imagemin({optimizationLevel: 3 }) )
     .pipe(dest('./build/img'));
 
   
