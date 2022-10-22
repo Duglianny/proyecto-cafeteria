@@ -18,11 +18,12 @@ function css(done){
   done()
 }
 
-function imagenes(done) {
-  src('./src/img/**/*')
+function imagenes() {
+  return('./src/img/**/*')
+    .pipe(imagemin({optimizationLeve:3}))
     .pipe(dest('./build/img'));
 
-    done();
+  
 }
 
 function dev(){
