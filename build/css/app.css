@@ -369,6 +369,8 @@ h3 {
 .header {
   padding: 5rem 0;
   position: relative;
+  color: black;
+  font-size: 2rem;
 }
 .header::before {
   content: "";
