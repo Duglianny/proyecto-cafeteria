@@ -370,21 +370,6 @@ h3 {
   padding: 5rem 0;
   position: relative;
 }
-@media (min-width: 480px) {
-  .header {
-    padding: 4rem;
-  }
-}
-@media (min-width: 768px) {
-  .header {
-    padding: 3rem;
-  }
-}
-@media (min-width: 1024) {
-  .header {
-    padding: 2rem;
-  }
-}
 .header::before {
   content: "";
   background-color: #000;
@@ -401,4 +386,28 @@ h3 {
 
 .header-inicio {
   background-image: url(../img/header_inicio.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.barra {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .barra {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.barra .logo {
+  width: 50%;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .barra .logo {
+    width: 20rem;
+    margin: 0;
+  }
 }
