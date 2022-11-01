@@ -403,6 +403,14 @@ h3 {
   background-color: #5E311E;
 }
 
+.margin-negativo-10 {
+  margin-top: -10rem;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
 .header {
   padding: 5rem 0;
   position: relative;
@@ -653,4 +661,26 @@ h3 {
 .menu li .precio {
   font-size: 4rem;
   font-weight: 700;
+}
+
+.nuestros-testimoniales {
+  padding: 10rem 2rem;
+}
+@media (min-width: 768px) {
+  .nuestros-testimoniales {
+    padding: 10rem;
+  }
+}
+.nuestros-testimoniales .testimoniales {
+  background-color: #ebe7de;
+  padding: 2rem 4rem;
+  max-width: 50rem;
+  margin: 0 auto;
+  border-radius: 1rem;
+}
+.nuestros-testimoniales .testimoniales .autor {
+  text-align: right;
+  font-size: 2.4rem;
+  font-family: "Bona Nova", serif;
+  color: #5E311E;
 }
