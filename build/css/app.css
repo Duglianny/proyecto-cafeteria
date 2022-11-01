@@ -337,6 +337,7 @@ p {
 
 a {
   text-decoration: none;
+  color: #000;
 }
 
 img {
@@ -503,6 +504,47 @@ h3 {
 }
 .nav-principal a.activo {
   color: #C39C63;
+}
+
+.footer {
+  background-color: #5E311E;
+}
+.footer .contenido-footer {
+  padding: 5rem;
+}
+@media (min-width: 768px) {
+  .footer .contenido-footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+}
+.footer .copyright {
+  text-align: center;
+  color: #fff;
+  margin: 0;
+  padding: 2rem;
+}
+
+.footer-box {
+  text-align: center;
+  font-family: "Bona Nova", serif;
+  margin-bottom: 5rem;
+}
+@media (min-width: 768px) {
+  .footer-box {
+    margin-bottom: 0;
+  }
+}
+.footer-box h3 {
+  font-family: "Bona Nova", serif;
+  font-size: 2.4rem;
+  color: #C39C63;
+  margin: 0 0 1rem 0;
+}
+.footer-box p, .footer-box a {
+  font-size: 2rem;
+  margin: 0;
 }
 
 .contenido-principal {
