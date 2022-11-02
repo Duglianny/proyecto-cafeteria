@@ -353,7 +353,7 @@ ul {
 }
 
 h1, h2, .heading-blanco, h3 {
-  font-family: "Bona Nova", serif;
+  font-family: "Raleway", sans-serif;
   margin: 0 0 5rem 0;
   text-align: center;
   text-transform: uppercase;
@@ -459,6 +459,10 @@ h3 {
 
 .header-proceso {
   background-image: url(../img/header_proceso.jpg);
+}
+
+.header-menu {
+  background-image: url(../img/header_menu.jpg);
 }
 
 .barra {
@@ -802,4 +806,30 @@ h3 {
   width: 50%;
   height: 5px;
   background-color: #C39C63;
+}
+
+.padding-bottom {
+  padding-bottom: 0;
+}
+
+.contenido-menu {
+  position: relative;
+}
+@media (min-width: 768px) {
+  .contenido-menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+  }
+  .contenido-menu .imagen {
+    position: absolute;
+    top: 7rem;
+    right: -3rem;
+  }
+  .contenido-menu .imagen img {
+    width: 40rem;
+  }
+}
+.contenido-menu .texto p {
+  font-size: 2rem;
 }

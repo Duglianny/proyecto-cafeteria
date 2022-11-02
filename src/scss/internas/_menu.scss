@@ -1,0 +1,33 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.padding-bottom{
+  padding-bottom: 0;
+}
+
+.contenido-menu{
+  position: relative;
+  
+  @include m.tablet{
+    @include m.grid(2, v.$separacion);
+
+    .imagen{
+      position: absolute;
+      top: 7rem;
+      right: -3rem;
+
+      img{
+        width: 40rem;
+        
+      }
+    }
+
+    }
+  .texto{
+    
+    p{
+      font-size: 2rem;
+    }
+  }
+    
+}
