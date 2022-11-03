@@ -31,4 +31,8 @@ dist-ssr
 *.css.map
 *.sass.map
 *.scss.map
+<<<<<<< HEAD
 build*
+=======
+build
+>>>>>>> header

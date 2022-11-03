@@ -1,4 +1,6 @@
 @forward './normalize';
-@forward './globales';
 @forward './variables';
-@use './utilidades';
+@forward './mixins';
+@forward './globales';
+@forward './tipografia';
+@forward  './utilidades';
