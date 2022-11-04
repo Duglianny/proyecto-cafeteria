@@ -30,4 +30,13 @@ dist-ssr
 .sass-cache/
 *.css.map
 *.sass.map
+<<<<<<< HEAD
 *.scss.map
+=======
+*.scss.map
+<<<<<<< HEAD
+build*
+=======
+build
+>>>>>>> header
+>>>>>>> develop
